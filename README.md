@@ -1,44 +1,60 @@
-# Thales Open Source Template Project
+# PIM_GCD
 
-Template for creating a new project in the [Thales GitHub organization](https://github.com/ThalesGroup).
 
-Each Thales OSS project repository **MUST** contain the following files at the root:
+## Updates
 
-- a `LICENSE` which has been chosen in accordance with legal department depending on your needs
+## Paper
+### Parametric Information Maximization for Generalized Category Discovery
 
-- a `README.md` outlining the project goals, sponsoring sig, and community contact information, [GitHub tips about README.md](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes)
+## Abstract
+<p align="justify">
+  We introduce a Parametric Information Maximization (PIM) model for the Generalized Category Discovery (GCD) problem. Specifically, we propose a bi-level optimization formulation, which explores a parameterized family of objective functions, each evaluating a weighted mutual information between the features and the latent labels, subject to supervision constraints from the labeled samples. Our formulation mitigates the class-balance bias encoded in standard information maximization approaches, thereby handling effectively both short-tailed and long-tailed data sets. We report extensive experiments and comparisons demonstrating that our PIM model consistently sets new state-of-the-art performances in GCD across six different datasets, more so when dealing with challenging fine-grained problems. 
+</p>
 
-- a `CONTRIBUTING.md` outlining how to contribute to the project, how to submit a pull request and an issue
+### Pre-requisites
+* Python 3.9.4
+* numpy 1.22.0
+* scikit-learn 0.24.1
+* scipy 1.11.1
+* yaml 6.0
+* tqdm 4.65.0
+* Pytorch 1.11.0 
+* CUDA 11.3 
 
-- a `SECURITY.md` outlining how the security concerns are handled, [GitHub tips about SECURITY.md](https://docs.github.com/en/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository)
+You can install all the pre-requisites using 
+```bash
+$ cd <root_dir>
+$ pip install -r requirements.txt
+```
 
-Below is an example of the common structure and information expected in a README.
+### Feature map datasets
+We evaluated our approach on the following datasets:
+- CIFAR10 
+- CIFAR100 
+- ImageNet-100 
+- CUB 
+- Stanford-Cars 
+- Herbarium19
 
-**Please keep this structure as is and only fill the content for each section according to your project.**
+Specifically, we applied our approach on the feature maps which we extracted with ViT-B-16 encoder on the above mentioned datasets. ViT-B-16 encoder follows the training procedure proposed in GCD code https://github.com/sgvaze/generalized-category-discovery.
 
-If you need assistance or have question, please contact oss@thalesgroup.com
+### Running the code
+The script pim_partitioning.py runs the proposed PIM partitioning model.
 
-## Get started
+You can set the feature map datasets paths in the config file [`./configs/config_fm_paths.yml`](./configs/config_fm_paths.yml).
 
-XXX project purpose it to ...
+Apply PIM on a given feature map dataset as follows:
+```bash
+$ cd <root_dir>
+$ python pim_partitioning.py --dataset <dataset_name>
+```
+where ```<dataset_name>``` must be replaced with one of the following dataset names: 
+- ```cifar10``` for CIFAR-10
+- ```cifar100``` for CIFAR-100
+- ```imagenet_100``` for ImageNet-100
+- ```cub``` for CUB
+- ```scars``` for Stanford-Cars
+- ```herbarium``` for Herbarium19
 
-**Please also add the description into the About section (Description field)**
-
-## Documentation
-
-Documentation is available at [xxx/docs](https://xxx/docs/).
-
-You can use [GitHub pages](https://guides.github.com/features/pages/) to create your documentation.
-
-See an example here : https://github.com/ThalesGroup/ThalesGroup.github.io
-
-**Please also add the documentation URL into the About section (Website field)**
-
-## Contributing
-
-If you are interested in contributing to the XXX project, start by reading the [Contributing guide](/CONTRIBUTING.md).
-
-## License
-
-The chosen license in accordance with legal department must be defined into an explicit [LICENSE](https://github.com/ThalesGroup/template-project/blob/master/LICENSE) file at the root of the repository
-You can also link this file in this README section.
+### Recommendations
+- Our code enables, without the need of a validation set, to automatically estimate the optimal lambda value for each unlabeled feature map set. Note: A small lambda value close to 0 is more appropriate on balanced datasets (such as CUB) while a lambda value close to 1 is more appropriate on long-tailed imbalanced datasets (such as Herbarium19). 

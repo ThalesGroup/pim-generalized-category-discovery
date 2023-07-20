@@ -1,0 +1,13 @@
+# --------------------------
+# FEATURE MAP DATASETS ROOTS
+# --------------------------
+
+gcd_feature_map_datasets_path: ../npy_feature_maps
+
+cifar10: vit_dino_cifar10_best
+cifar100: vit_dino_cifar100_best
+imagenet_100: vit_dino_imagenet_100_best
+
+cub: vit_dino_cub_best
+scars: vit_dino_scars_best
+herbarium: vit_dino_herbarium_19_best
