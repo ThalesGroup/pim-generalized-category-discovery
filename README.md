@@ -4,7 +4,17 @@
 ## Updates
 
 ## Paper
-### Parametric Information Maximization for Generalized Category Discovery
+### [**Parametric Information Maximization for Generalized Category Discovery**](https://arxiv.org/pdf/2212.00334.pdf)
+
+If you find this code useful for your research, please cite our [paper](https://arxiv.org/pdf/2212.00334.pdf):
+```
+@article{ch2022sc,
+  title={Parametric Information Maximization for Generalized Category Discovery},
+  author={Florent Chiaroni and Jose Dolz and Ziko Imtiaz Masud and Amar Mitiche and Ismail Ben Ayed},
+  journal={arXiv preprint arXiv:2212.00334},
+  year={2022}
+}
+```
 
 ## Abstract
 <p align="justify">
