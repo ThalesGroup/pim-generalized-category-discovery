@@ -4,7 +4,17 @@
 ## Updates
 
 ## Paper
-### Parametric Information Maximization for Generalized Category Discovery
+### [**Parametric Information Maximization for Generalized Category Discovery**](https://arxiv.org/pdf/2212.00334.pdf)
+
+If you find this code useful for your research, please cite our [paper](https://arxiv.org/pdf/2212.00334.pdf):
+```
+@article{ch2022sc,
+  title={Parametric Information Maximization for Generalized Category Discovery},
+  author={Florent Chiaroni and Jose Dolz and Ziko Imtiaz Masud and Amar Mitiche and Ismail Ben Ayed},
+  journal={arXiv preprint arXiv:2212.00334},
+  year={2022}
+}
+```
 
 ## Abstract
 <p align="justify">
@@ -58,3 +68,4 @@ where ```<dataset_name>``` must be replaced with one of the following dataset na
 
 ### Recommendations
 - Our code enables, without the need of a validation set, to automatically estimate the optimal lambda value for each unlabeled feature map set. Note: A small lambda value close to 0 is more appropriate on balanced datasets (such as CUB) while a lambda value close to 1 is more appropriate on long-tailed imbalanced datasets (such as Herbarium19). 
+
