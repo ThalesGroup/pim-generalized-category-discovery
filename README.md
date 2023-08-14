@@ -41,10 +41,14 @@ $ cd <root_dir>
 $ pip install -r requirements.txt
 ```
 
+### Feature map datasets
+This code enables to directly apply our approach PIM on top of the feature maps which we extracted with ViT-B-16 encoder. ViT-B-16 encoder follows the training procedure proposed in [GCD code](https://github.com/sgvaze/generalized-category-discovery).
+The extracted feature map datasets can be directly downloaded [here](https://drive.google.com/drive/folders/1RYrN3wSCESBA5PRRrZz5pde-u0DBUdVn?usp=sharing).
+
 ### Running the code
 The script pim_partitioning.py runs the proposed PIM partitioning model.
 
-You can set the feature map datasets paths in the config file [`./configs/config_fm_paths.yml`](./configs/config_fm_paths.yml).
+You can set the feature map dataset paths in the config file [`./configs/config_fm_paths.yml`](./configs/config_fm_paths.yml).
 
 Apply PIM on a given feature map dataset as follows:
 ```bash
@@ -58,8 +62,6 @@ where ```<dataset_name>``` must be replaced with one of the following dataset na
 - ```cub``` for CUB
 - ```scars``` for Stanford-Cars
 - ```herbarium``` for Herbarium19
-
-Specifically, we applied our approach on the feature maps which we extracted with ViT-B-16 encoder on the above mentioned datasets. ViT-B-16 encoder follows the training procedure proposed in [GCD code](https://github.com/sgvaze/generalized-category-discovery).
 
 ## Recommendations
 A small lambda value close to 0 is more appropriate on balanced datasets (such as CUB) while a lambda value close to 1 is more appropriate on long-tailed imbalanced datasets (such as Herbarium19). **Note**: Our code enables, without the need of a validation set, to automatically estimate the optimal lambda value for each unlabeled feature map set.
