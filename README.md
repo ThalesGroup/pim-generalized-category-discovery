@@ -72,7 +72,7 @@ where ```<dataset_name>``` must be replaced with one of the following dataset na
 Our code enables, without the need of a validation set, to automatically estimate the optimal lambda value for each unlabeled feature map set. Note: A small lambda value close to 0 is more appropriate on balanced datasets (such as CUB) while a lambda value close to 1 is more appropriate on long-tailed imbalanced datasets (such as Herbarium19). 
 
 ## Contributing
-If you are interested in contributing to the XXX project, start by reading the [Contributing guide](/CONTRIBUTING.md).
+If you are interested in contributing to this project, start by reading our [Contributing guide](/CONTRIBUTING.md).
 
 ## License
 The code is licensed under the MIT (see [LICENSE](/LICENSE) for details).
