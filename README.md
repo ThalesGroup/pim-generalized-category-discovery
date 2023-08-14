@@ -73,3 +73,6 @@ Our code enables, without the need of a validation set, to automatically estimat
 
 ## Contributing
 If you are interested in contributing to the XXX project, start by reading the [Contributing guide](/CONTRIBUTING.md).
+
+## License
+The code is licensed under the MIT (see [LICENSE](/LICENSE) for details).
