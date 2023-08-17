@@ -42,8 +42,8 @@ $ pip install -r requirements.txt
 ```
 
 ### Feature map datasets
-This code enables to directly apply our approach PIM on top of the feature maps which we extracted with ViT-B-16 encoder. ViT-B-16 encoder follows the training procedure proposed in [GCD code](https://github.com/sgvaze/generalized-category-discovery).
-The extracted feature map datasets can be directly downloaded [here](https://drive.google.com/drive/folders/1RYrN3wSCESBA5PRRrZz5pde-u0DBUdVn?usp=sharing).
+This code enables to directly apply our approach PIM on top of the feature map sets, which can be extracted with the ViT-B-16 encoder following the training procedure proposed in [GCD code](https://github.com/sgvaze/generalized-category-discovery).
+The extracted feature map sets can be directly downloaded [here](https://drive.google.com/file/d/1p0N_F-pK0Y2vKPbb7Dt3aiT8ifLtuzH6/view?usp=sharing).
 
 ### Running the code
 The script pim_partitioning.py runs the proposed PIM partitioning model.
