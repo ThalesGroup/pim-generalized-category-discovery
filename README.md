@@ -50,7 +50,7 @@ The script pim_partitioning.py runs the proposed PIM partitioning model.
 
 You can set the feature map set paths in the config file [`./configs/config_fm_paths.yml`](./configs/config_fm_paths.yml).
 
-Apply PIM on a given feature map dataset as follows:
+Apply PIM on a given feature map set as follows:
 ```bash
 $ cd <root_dir>
 $ python pim_partitioning.py --dataset <dataset_name>
