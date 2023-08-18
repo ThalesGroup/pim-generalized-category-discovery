@@ -41,7 +41,7 @@ $ cd <root_dir>
 $ pip install -r requirements.txt
 ```
 
-### Feature map datasets
+### Feature map sets
 This code enables to directly apply our approach PIM on top of the feature map sets, which can be extracted with the ViT-B-16 encoder following the training procedure proposed in [GCD code](https://github.com/sgvaze/generalized-category-discovery).
 The extracted feature map sets can be directly downloaded [here](https://drive.google.com/file/d/1p0N_F-pK0Y2vKPbb7Dt3aiT8ifLtuzH6/view?usp=sharing).
 
