@@ -4,17 +4,16 @@
 ## Updates
 
 ## Paper
-### [**Parametric Information Maximization for Generalized Category Discovery**](https://arxiv.org/pdf/2212.00334.pdf)
+### [**Parametric Information Maximization for Generalized Category Discovery**](https://openaccess.thecvf.com/content/ICCV2023/papers/Chiaroni_Parametric_Information_Maximization_for_Generalized_Category_Discovery_ICCV_2023_paper.pdf)
 
-If you find this code useful for your research, please cite our [paper](https://arxiv.org/pdf/2212.00334.pdf):
+If you find this code useful for your research, please cite our [paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Chiaroni_Parametric_Information_Maximization_for_Generalized_Category_Discovery_ICCV_2023_paper.pdf) (published at ICCV 2023):
 ```
-@misc{chiaroni2023parametric,
-      title={Parametric Information Maximization for Generalized Category Discovery}, 
-      author={Florent Chiaroni and Jose Dolz and Ziko Imtiaz Masud and Amar Mitiche and Ismail Ben Ayed},
-      year={2023},
-      eprint={2212.00334},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{chiaroni2023parametric,
+  title={Parametric information maximization for generalized category discovery},
+  author={Chiaroni, Florent and Dolz, Jose and Masud, Ziko Imtiaz and Mitiche, Amar and Ben Ayed, Ismail},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={1729--1739},
+  year={2023}
 }
 ```
 
